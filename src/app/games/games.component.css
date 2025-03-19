@@ -1,0 +1,61 @@
+/* Generel opsætning */
+body {
+    background-color: #ffffff;
+    color: #000000;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Container til formularen */
+  .game-container {
+    max-width: 500px;
+    margin: 40px auto; /* Centreret på siden */
+    padding: 20px;
+    border: 2px solid #333333; /* Mørkegrå outline */
+    border-radius: 5px;
+  }
+  
+  /* Overskrift */
+  .game-container h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #000000;
+  }
+  
+  /* Labels */
+  .game-container label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  /* Inputs og textarea */
+  .game-container input[type="text"],
+  .game-container textarea,
+  .game-container select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #333333; /* Mørkegrå outline */
+    border-radius: 3px;
+    font-size: 14px;
+    color: #000000;
+  }
+  
+  /* Knap */
+  .game-container button[type="submit"] {
+    background-color: #000000; /* Sort baggrund */
+    color: #ffffff;            /* Hvid tekst */
+    padding: 10px 16px;
+    font-size: 14px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  /* Knap:hover (valgfri for bedre brugeroplevelse) */
+  .game-container button[type="submit"]:hover {
+    background-color: #333333; /* Mørkegrå ved hover */
+  }
+  
