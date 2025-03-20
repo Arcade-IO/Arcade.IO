@@ -11,6 +11,7 @@ import { GamesComponent } from './games/games.component';
 import { LeaderboardComponent } from './leaderboard/leaderboard.component';
 import { RouterModule } from '@angular/router';
 import { NavbarComponent } from './navbar/navbar.component';
+import { GameInterfaceComponent } from './game-interface/game-interface.component';
 
 export const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -25,7 +26,7 @@ export const routes: Routes = [
   { path: 'leaderboard', component: LeaderboardComponent },  
   { path: 'navbar', component: NavbarComponent },  
 
-
+  { path: 'game-interface', component: GameInterfaceComponent }
 
 
 
