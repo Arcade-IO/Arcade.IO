@@ -55,8 +55,8 @@ export class AdminDashboardComponent {
     }
   }
 
-  async grantAdminRights(userId: string) {
-    await this.firebaseService.grantAdminRights(userId);
+  async createAdminRights(userId: string) {
+    await this.firebaseService.createAdminRights(userId);
     this.fetchUsers();
   }
 
@@ -64,7 +64,7 @@ export class AdminDashboardComponent {
     if (user.isAdmin) {
       await this.firebaseService.revokeAdminRights(user.uid);
     } else {
-      await this.firebaseService.grantAdminRights(user.uid);
+      await this.firebaseService.createAdminRights(user.uid);
     }
     this.fetchUsers();  // Refresh the user list
   }
