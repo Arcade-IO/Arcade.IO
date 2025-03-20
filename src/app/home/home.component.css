@@ -1,20 +1,17 @@
+
+
 /* Fullscreen container */
 .home-container {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-family: 'Poppins', sans-serif;
+    height: 90vh;
     background-image: url('https://github.com/Arcade-IO/Arcade.IO/blob/main/src/assets/images/logo/ARCADE.IO-HOME.png?raw=true');
     background-color: #040029;
     color: white;
-    padding: 20px;
+    padding: 45px;
     position: relative; /* Important for absolute positioning of the buttons */
     background-size: cover; /* This ensures the image scales correctly */
     background-position: center center; /* This centers the image */
     background-repeat: no-repeat; /* Prevents repeating the image */
+    
 }
 
 /* Button container for top-right buttons */
@@ -35,7 +32,7 @@
     font-size: 1rem;
     cursor: pointer;
     border-radius: 25px;
-    transition: all 0.3s ease;
+    transition: all 0.3s ease;  font-family: "Roboto", sans-serif;
 }
 
 .button:hover {

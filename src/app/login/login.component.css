@@ -3,13 +3,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
 }
 
 /* Body Styling */
 body {
   font-family: 'Arial', sans-serif;
-  
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -25,15 +23,7 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-family: 'Poppins', sans-serif;
-  background-image: url('https://github.com/Arcade-IO/Arcade.IO/blob/main/src/assets/images/logo/ARCADE.IO%20SIGNUP2.png?raw=true');
-  background-color: #040029;
-  color: white;
-  padding: 20px;
-  position: relative; /* Important for absolute positioning of the buttons */
-  background-size: cover; /* This ensures the image scales correctly */
-  background-position: center center; /* This centers the image */
-  background-repeat: no-repeat; /* Prevents repeating the image */
+  font-family: "Roboto", sans-serif;
 }
 
 /* Login Box */
@@ -44,14 +34,12 @@ body {
   border-radius: 50px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   width: 100%;
-  max-width: 400px;
-  text-align: center;
-  align-content: center;
+  max-width: 350px;
 }
 
 /* Header */
 h2 {
-  color: #333;
+  color: rgb(255, 255, 255);
   margin-bottom: 20px;
 }
 
@@ -60,18 +48,21 @@ h2 {
   margin-bottom: 15px;
 }
 
+/* Input Fields */
 input {
+  background-color: #3f72b500;
   width: 100%;
   padding: 12px;
   border: 2px solid #ccc;
   border-radius: 25px;
   font-size: 16px;
   margin-bottom: 10px;
+  color: rgb(255, 255, 255);
   transition: border-color 0.3s ease;
 }
 
 input:focus {
-  border-color: linear-gradient(145deg, #a8c0ff, #3f72b5);
+  border-color: #ffffff;
   outline: none;
 }
 
@@ -79,9 +70,9 @@ input:focus {
 .login-btn {
   width: 100%;
   padding: 12px;
-  background: linear-gradient(145deg, #a8c0ff, #3f72b5); /* Gradient button */
+  background-color: #3f72b500;
   color: #fff;
-  border: 2px solid #3f72b5;
+  border: 2px solid #ffffff;
   border-radius: 25px;
   font-size: 16px;
   cursor: pointer;
@@ -89,13 +80,14 @@ input:focus {
 }
 
 .login-btn:hover {
-  background: linear-gradient(145deg, #3f72b5, #a8c0ff); /* Hover effect */
+  background: linear-gradient(145deg, #0000003b, #00000049); /* Hover effect */
 }
 
 /* Signup Text */
 .signup-text {
   text-align: center;
   margin-top: 15px;
+  color: white;
 }
 
 /* Signup Button */
