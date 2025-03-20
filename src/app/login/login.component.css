@@ -3,11 +3,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
 }
 
 /* Body Styling */
 body {
   font-family: 'Arial', sans-serif;
+  
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -17,10 +19,21 @@ body {
 
 /* Main Container */
 .login-container {
-  width: 100%;
-  max-width: 400px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  background-image: url('https://github.com/Arcade-IO/Arcade.IO/blob/main/src/assets/images/logo/ARCADE.IO%20SIGNUP2.png?raw=true');
+  background-color: #040029;
+  color: white;
   padding: 20px;
-  margin: 0 auto;
+  position: relative; /* Important for absolute positioning of the buttons */
+  background-size: cover; /* This ensures the image scales correctly */
+  background-position: center center; /* This centers the image */
+  background-repeat: no-repeat; /* Prevents repeating the image */
 }
 
 /* Login Box */
@@ -31,7 +44,9 @@ body {
   border-radius: 50px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   width: 100%;
+  max-width: 400px;
   text-align: center;
+  align-content: center;
 }
 
 /* Header */

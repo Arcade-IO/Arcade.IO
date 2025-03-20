@@ -7,7 +7,8 @@
 
 /* Body Styling */
 body {
-  background: linear-gradient(145deg, #a8edea, #fed6e3); /* Gradient background */
+  background-image: url('https://github.com/Arcade-IO/Arcade.IO/blob/main/src/assets/images/logo/ARCADE.IO%20SIGNUP2.png?raw=true');
+  background-color: #040029;
   font-family: 'Arial', sans-serif;
   height: 100vh;
   display: flex;
