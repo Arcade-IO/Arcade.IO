@@ -30,10 +30,7 @@
   height: 7vh; 
   margin: 5vw;/* Adjust logo size */
 }
-.img2{
-  margin: 4vw;/* Adjust logo size */
-  height: 10vh; /* Adjust logo size */
-}
+
 /* Navigation List */
 ul {
   list-style: none;
