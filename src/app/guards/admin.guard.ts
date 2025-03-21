@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { CanActivate, Router } from '@angular/router';
 import { FirebaseService } from '../services/firebase.service';
-import { getAuth } from 'firebase/auth';
+import { getAuth, onAuthStateChanged } from 'firebase/auth';
 
 @Injectable({
   providedIn: 'root',
@@ -11,18 +11,29 @@ export class AdminGuard implements CanActivate {
 
   async canActivate(): Promise<boolean> {
     const auth = getAuth();
-    const user = auth.currentUser;
-    
-    if (!user) {
-      this.router.navigate(['/admin-login']);
-      return false;
-    }
+    return new Promise<boolean>((resolve) => {
+      const unsubscribe = onAuthStateChanged(auth, async (user) => {
+        unsubscribe(); // Clean up the listener once we have the user info
 
-    const isAdmin = await this.firebaseService.checkIfAdmin(user.uid);
-    if (!isAdmin) {
-      this.router.navigate(['/']);
-      return false;
-    }
-    return true;
+        // If there is no user, redirect to admin login page
+        if (!user) {
+          this.router.navigate(['/admin-login']);
+          resolve(false);
+          return;
+        }
+
+        // If the user is logged in, check if they have admin privileges
+        const isAdmin = await this.firebaseService.checkIfAdmin(user.uid);
+        if (!isAdmin) {
+          // Optionally, redirect non-admins to another page (here, the homepage)
+          this.router.navigate(['/']);
+          resolve(false);
+          return;
+        }
+
+        // The user is logged in and is an admin
+        resolve(true);
+      });
+    });
   }
 }

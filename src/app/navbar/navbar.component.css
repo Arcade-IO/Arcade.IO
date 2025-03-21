@@ -22,10 +22,7 @@
 }
 
 /* Logo Styling */
-.logo{
-  display: flex;
 
-}
 .img1{
   height: 7vh; 
   margin: 5vw;/* Adjust logo size */

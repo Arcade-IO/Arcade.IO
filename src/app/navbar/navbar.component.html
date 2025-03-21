@@ -6,6 +6,11 @@
     <li *ngIf="isAdmin"><a [routerLink]="['/admin-dashboard']" routerLinkActive="active">Administration</a></li>
     <li><a [routerLink]="['/leaderboard']" routerLinkActive="active">Leaderboard</a></li>
     <li><a [routerLink]="['/dashboard']" routerLinkActive="active">Dashboard</a></li>
+    <li *ngIf="isLoggedIn" class="logout">
+      <button (click)="logout()">
+         <img src="assets/signout.png" alt="Logout" />
+      </button>
+    </li>
   </ul>
 </nav>
 <hr>

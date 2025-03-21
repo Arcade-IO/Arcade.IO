@@ -7,7 +7,6 @@ import { AppComponent } from './app.component';  // Import standalone component
 import { SignupComponent } from './signup/signup.component';  // Import standalone component
 import { LoginComponent } from './login/login.component';  // Import standalone component
 import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component';  // Import standalone component
-import { AdminLoginComponent } from './admin-login/admin-login.component';  // Import standalone component
 import { bootstrapApplication } from '@angular/platform-browser';
 import { NavbarComponent } from './navbar/navbar.component';
 import { GamesComponent } from './games/games.component';
@@ -25,7 +24,6 @@ import { ChatComponent } from './chat/chat.component';
     SignupComponent,  // Import standalone component
     LoginComponent,  // Import standalone component
     AdminDashboardComponent,  // Import standalone component
-    AdminLoginComponent,  // Import standalone component
     NavbarComponent,
     GamesComponent,
     LeaderboardComponent,
