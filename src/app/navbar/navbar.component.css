@@ -43,8 +43,12 @@ a {
 }
 
 /* Hover and Active States */
-a:hover, a.active {
+a:hover {
   background-color: #0000003b; /* Darker background on hover */
   color: #fff; /* Maintain text color */
   border-radius: 25px;
+}
+a.active{
+  background-color: #726e6e3b; /* Darker background on hover */
+  color: #fff; /* Maintain text color */
 }
