@@ -7,8 +7,6 @@
 
 /* Body Styling */
 body {
-  font-family: "Inconsolata", monospace;
-
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -24,8 +22,6 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-family: "Inconsolata", monospace;
-
 }
 
 /* Login Box */
