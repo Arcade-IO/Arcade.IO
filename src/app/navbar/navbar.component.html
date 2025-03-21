@@ -1,10 +1,10 @@
 <nav class="navbar">
   <div class="logo">
-    <img src="https://github.com/Arcade-IO/Arcade.IO/blob/main/src/assets/images/logo/ARCADE.IO-NAVBAR-LOGO.png?raw=true" alt="Arcade IO Logo">
+    <img src="assets\ARCADE.IO-ICON-A.png" alt="Arcade-IO-Logo_2" class="img1">
+    <img src="assets\ARCADE.IO-NAVBAR-LOGO.png" alt="Arcade-IO-Logo" class="img2">
   </div>
   <ul>
     <li *ngIf="isAdmin"><a [routerLink]="['/admin-dashboard']" routerLinkActive="active">Administration</a></li>
-    <li><a [routerLink]="['/chat']" routerLinkActive="active">Chat</a></li>
     <li><a [routerLink]="['/leaderboard']" routerLinkActive="active">Leaderboard</a></li>
     <li><a [routerLink]="['/dashboard']" routerLinkActive="active">Dashboard</a></li>
   </ul>

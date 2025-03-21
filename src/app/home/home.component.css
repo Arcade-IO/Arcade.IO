@@ -2,8 +2,8 @@
 
 /* Fullscreen container */
 .home-container {
-    height: 90vh;
-    background-image: url('https://github.com/Arcade-IO/Arcade.IO/blob/main/src/assets/images/logo/ARCADE.IO-HOME.png?raw=true');
+    height: 100vh;
+    background-image: url('https://github.com/Arcade-IO/Arcade.IO/blob/main/src/assets/ARCADE.IO-HOME.png?raw=true');
     background-color: #040029;
     color: white;
     padding: 45px;
