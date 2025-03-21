@@ -35,30 +35,10 @@
     cursor: pointer;
     border-radius: 25px;
     transition: all 0.3s ease;  
-    font-family: "Inconsolata", monospace;
 
 }
 
 .button:hover {
     background: white;
     color: #3f72b5;
-}
-
-/* Hero Section */
-h1 {
-    font-size: 3.5rem;
-    font-weight: 700;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
-
-/* Separator */
-hr {
-    border: 0;
-    height: 2px;
-    background: rgba(255, 255, 255, 0.5);
-    width: 50%;
-    margin: 30px 0;
-    border-radius: 2px;
 }

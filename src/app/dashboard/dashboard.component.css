@@ -23,7 +23,6 @@
     cursor: pointer;
     border-radius: 25px;
     transition: all 0.3s ease;
-    font-family: "Roboto", sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
