@@ -1,11 +1,12 @@
 <nav class="navbar">
-    <ul>
-     <li *ngIf="isAdmin"><a [routerLink]="['/admin-dashboard']" routerLinkActive="active">Administration</a></li>
-<li><a [routerLink]="['/chat']" routerLinkActive="active">Chat</a></li>
-<li><a [routerLink]="['/games']" routerLinkActive="active">Games</a></li>
-<li><a [routerLink]="['/leaderboard']" routerLinkActive="active">Leaderboard</a></li>
-
-    </ul>
-  </nav>
-  <hr>
-  
+  <div class="logo">
+    <img src="https://github.com/Arcade-IO/Arcade.IO/blob/main/src/assets/images/logo/ARCADE.IO-NAVBAR-LOGO.png?raw=true" alt="Arcade IO Logo">
+  </div>
+  <ul>
+    <li *ngIf="isAdmin"><a [routerLink]="['/admin-dashboard']" routerLinkActive="active">Administration</a></li>
+    <li><a [routerLink]="['/chat']" routerLinkActive="active">Chat</a></li>
+    <li><a [routerLink]="['/leaderboard']" routerLinkActive="active">Leaderboard</a></li>
+    <li><a [routerLink]="['/dashboard']" routerLinkActive="active">Dashboard</a></li>
+  </ul>
+</nav>
+<hr>

@@ -8,12 +8,24 @@
 /* Navbar Styling */
 .navbar {
   background-color: #020016; /* Consistent with the other button and hover colors */
-  padding: 10px;
+  padding-left: 10px;
+  padding-right: 100px;
+  padding-bottom: 10px;
+  padding-top: 10px;
   z-index: 1000;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 5px; /* Rounded corners for consistency */
   height: 10vh;
-  align-content: center;
+  display: flex;
+  align-items: center; /* Centers logo and links vertically */
+  justify-content: space-between; /* Adds space between logo and menu */
+}
+
+/* Logo Styling */
+.navbar .logo img {
+  height: 100px; /* Adjust logo size */
+  margin-right: 20px; /* Space between logo and nav items */
+  margin: 5vw;
 }
 
 /* Navigation List */
@@ -35,7 +47,7 @@ li {
 a {
   color: white;
   text-decoration: none;
-  padding: 10px 20px;
+  padding: 10px 30px;
   font-size: 32px;
   font-family: "Roboto", sans-serif;
   border-radius: 25px;
@@ -48,7 +60,7 @@ a:hover {
   color: #fff; /* Maintain text color */
   border-radius: 25px;
 }
-a.active{
+a.active {
   background-color: #726e6e3b; /* Darker background on hover */
   color: #fff; /* Maintain text color */
 }
